@@ -1,19 +1,36 @@
 
-# 🎮 Hangman Game Challenge
+# 📘 Assignment: Hangman Game
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+## 🎯 Objective
 
-## � What You'll Build
+Build a word-guessing game that practices Python strings, loops, conditionals, user input, and random selection. Players will reveal a hidden word by guessing its letters before they run out of attempts.
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+## 📝 Tasks
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+### 🛠️ Set Up and Display the Game
 
-## ✅ Must Have's
+#### Description
+Choose a secret word from the provided list, initialize the game state, and show the player's progress before each guess.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Randomly select one word from the provided `words` list.
+- Track guessed letters and the number of incorrect guesses, using a maximum of 6 incorrect guesses.
+- Display each letter that has been guessed correctly in its position and use underscores for unrevealed letters.
+- Display the incorrect guesses remaining.
+
+
+### 🛠️ Process Guesses and Finish the Game
+
+#### Description
+Prompt the player to guess letters, update the game state, and finish with the appropriate result when the player wins or runs out of attempts.
+
+#### Requirements
+Completed program should:
+
+- Accept one letter per guess and treat uppercase and lowercase versions of the same letter equally.
+- Reveal all matching positions for a correct guess.
+- Reduce the remaining attempts for an incorrect guess; do not reduce attempts for a letter already guessed.
+- End when the player reveals every letter in the secret word or uses all incorrect guesses.
+- Display a win or loss message and reveal the secret word if the player loses.
